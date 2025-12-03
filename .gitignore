@@ -1,0 +1,110 @@
+# =========================================
+# Global Node & JavaScript ignores
+# =========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================================
+# Environment files (IMPORTANT)
+# =========================================
+*.env
+*.env.local
+*.env.development.local
+*.env.production.local
+*.env.test.local
+
+# Never commit API keys, DB URI, secrets
+server/.env
+client/.env
+
+# =========================================
+# Build output
+# =========================================
+dist/
+build/
+.out/
+.next/
+.vercel/
+.vite/
+
+# Vite cache
+client/node_modules/.vite/
+client/.vite/
+
+# React/Vite build folders
+client/dist/
+client/build/
+
+# Server build folders (if using TS later)
+server/dist/
+server/build/
+
+# =========================================
+# Logs
+# =========================================
+logs/
+*.log
+server/logs/
+client/logs/
+debug.log
+
+# PM2 logs
+.pm2/logs/
+.pids/
+
+# =========================================
+# OS-specific files
+# =========================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================================
+# Editor / IDE files
+# =========================================
+.vscode/
+.vscode/*
+
+.idea/
+*.iml
+
+# JetBrains
+.idea/
+*.idea/
+
+# Visual Studio Code settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# =========================================
+# Dump files
+# =========================================
+*.sql
+*.sqlite
+*.sqlite3
+
+# =========================================
+# Temporary files
+# =========================================
+*.tmp
+*.temp
+temp/
+tmp/
+
+# =========================================
+# Ignore PhoneInfoga binaries / dumps
+# =========================================
+phoneinfoga/
+phoneinfoga-output/
+phoneinfoga-results/
+
+# =========================================
+# Docker ignores
+# =========================================
+docker-data/
+docker-compose.override.yml
